@@ -19,6 +19,7 @@
   <div>
     <p>世豪</p>
     <h1>吴忠昊</h1>
+    <h2>靳世豪</h2>
   </div>
   <RouterView />
 </template>
