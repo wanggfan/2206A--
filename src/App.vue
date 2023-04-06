@@ -9,14 +9,16 @@
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
+66666666666666666666666666
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header> -->
-
+<div>
+  666666666666666666666666666666666666666666666666666
+</div>
   <RouterView />
 </template>
 
