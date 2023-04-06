@@ -19,7 +19,8 @@
   <div>
     <p>世豪</p>
     <h1>吴忠昊</h1>
-    <p>郭芃显</p>
+    <p>芃显</p>
+
   </div>
   <RouterView />
 </template>
