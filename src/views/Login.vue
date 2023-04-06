@@ -60,7 +60,7 @@ const submitForm = async (formEl) => {
                console.log(res);
                router.push('/')
             }))
-         }else{
+         } else {
             return
          }
       } else {
