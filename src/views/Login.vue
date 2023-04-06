@@ -13,15 +13,15 @@
             <span class="h-[1px] w-16 bg-gray-200"></span>
          </div>
          <el-form ref="ruleFormRef" :model="ruleForm" :rules="rules" class="demo-ruleForm" :size="formSize" status-icon>
-            <el-form-item prop="name" class="w-[250px]">
-               <el-input v-model="ruleForm.name" placeholder="请输入账号" />
+            <el-form-item prop="username" class="w-[250px]">
+               <el-input v-model="ruleForm.username" placeholder="请输入账号" prefix-icon="User" />
             </el-form-item>
-            <el-form-item prop="pasward" class="w-[250px]">
-               <el-input v-model="ruleForm.pasward" placeholder="请输入密码" />
+            <el-form-item prop="password" class="w-[250px]">
+               <el-input v-model="ruleForm.password" placeholder="请输入密码" prefix-icon="Lock" />
             </el-form-item>
          </el-form>
          <el-form-item>
-            <el-button type="primary" @click="submitForm(ruleFormRef)" class="w-[250px] rounded-4xl">
+            <el-button type="primary" round @click="submitForm(ruleFormRef)" class="w-[250px] rounded-4xl">
                登录
             </el-button>
 
@@ -35,17 +35,17 @@ import { ref, reactive, onMounted, } from 'vue';
 const router = useRouter();
 const ruleFormRef = ref()
 const ruleForm = reactive({
-   name: '',
-   pasward: ''
+   username: '',
+   password: ''
 })
 const rules = reactive({
-   name: [
+   username: [
       { required: true, message: '请输入账号', trigger: 'blur' },
       { min: 3, max: 5, message: '账号格式错误', trigger: 'blur' },
    ],
-   pasward: [
+   password: [
       { required: true, message: '请输入密码', trigger: 'blur' },
-      { min: 6, max: 12, message: '密码长度在5到12位', trigger: 'blur' },
+      { min: 6, max: 12, message: '密码长度在6到12位', trigger: 'blur' },
    ],
 })
 //登录事件
