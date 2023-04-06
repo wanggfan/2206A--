@@ -11,14 +11,15 @@
       <HelloWorld msg="You did it!" />
 
       <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-          </nav>
-        </div>
-      </header> -->
+              <RouterLink to="/">Home</RouterLink>
+              <RouterLink to="/about">About</RouterLink>
+            </nav>
+          </div>
+        </header> -->
   <div>
     <p>世豪</p>
     <h1>吴忠昊</h1>
+    <P>靳世豪</P>
   </div>
   <RouterView />
 </template>
