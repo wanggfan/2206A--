@@ -1,6 +1,8 @@
 <template>
   <div class="about">
-    <h1></h1>
+    <h1>
+      吴忠昊
+    </h1>
   </div>
 </template>
 
